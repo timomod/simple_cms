@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+  root 'demo#index'
+    get 'demo/index' => 'demo#index'
+  get 'hello' => 'demo#hello'
+  get 'other_hello' => 'demo#other_hello'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
