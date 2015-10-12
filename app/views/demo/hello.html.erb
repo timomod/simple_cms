@@ -1,2 +1,24 @@
 <h1>Demo#hello</h1>
 <p>Hello hello World!</p>
+</br>
+<a href="demo/index">Index page 1</a></br>
+<%= link_to('Index page 2', { :action => 'index' }) %></br>
+<%= link_to 'Index page 3', demo_index_path %>
+
+</br>
+
+<% @array.each do |n| %>
+<%= n  %> </br>
+<% end %>
+
+</br>
+
+ID: <%= params[:id] %></br>
+ID: <%= @id %></br>
+Page: <%= @page %></br>
+Thingy: <%= @thingy%></br>
+Next page: <%= @page + 1 %></br>
+
+<hr>
+
+<%= params.inspect %></br>
